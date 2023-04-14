@@ -18,6 +18,8 @@ struct JokeView: View {
         NavigationView{
             VStack{
                 
+                Spacer()
+                
                 if let currentJoke = currentJoke{
                     Text(currentJoke.setup)
                         .font(.title)
@@ -45,7 +47,21 @@ struct JokeView: View {
                     ProgressView()
                 }
                 
-              
+              Spacer()
+                
+                Button (action: {
+                    punchlineOpacity = 0.0
+                    Task{
+                        withAnimation{
+                            currentJoke = nil
+                        }
+                        currentJoke = await NetworkService.fetch()
+                    }
+                }, label: {
+                    Text("New Joke")
+                })
+                .disabled(punchlineOpacity == 0.0 ? true : false)
+                .buttonStyle(.borderedProminent)
                 
             }
             .navigationTitle("Random Jokes")
