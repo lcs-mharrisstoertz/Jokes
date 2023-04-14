@@ -11,12 +11,13 @@ struct JokeView: View {
     
     //MARK: stored properties
     @State var punchlineOpacity = 0.0
+    @State var currentJoke = exampleJoke
     
     //MARK: computed properties
     var body: some View {
         NavigationView{
             VStack{
-                Text("You see, mountains aren't just funny.")
+                Text(currentJoke.setup)
                     .font(.title)
                     .multilineTextAlignment(.center)
                 
@@ -34,7 +35,7 @@ struct JokeView: View {
                         .tint(.black)
                 })
                 
-                Text("They are hill areas.")
+                Text(currentJoke.punchline)
                     .font(.title)
                     .multilineTextAlignment(.center)
                     .opacity(punchlineOpacity)
