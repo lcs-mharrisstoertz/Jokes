@@ -12,6 +12,7 @@ struct JokesApp: App {
     var body: some Scene {
         WindowGroup {
             JokeView()
+                .environment(\.blackbirdDatabase, AppDatabase.instance)
         }
     }
 }
