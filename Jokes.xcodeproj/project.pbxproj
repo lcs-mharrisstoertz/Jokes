@@ -16,6 +16,7 @@
 		CCDAFDA529EECA6700AA2D7C /* Blackbird in Frameworks */ = {isa = PBXBuildFile; productRef = CCDAFDA429EECA6700AA2D7C /* Blackbird */; };
 		CCDAFDA729EECD2C00AA2D7C /* db.sqlite in Resources */ = {isa = PBXBuildFile; fileRef = CCDAFDA629EECD2C00AA2D7C /* db.sqlite */; };
 		CCDAFDAA29EECF0600AA2D7C /* AppDatabase.swift in Sources */ = {isa = PBXBuildFile; fileRef = CCDAFDA929EECF0600AA2D7C /* AppDatabase.swift */; };
+		CCDAFDAC29EED12600AA2D7C /* FavouritesView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CCDAFDAB29EED12600AA2D7C /* FavouritesView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -28,6 +29,7 @@
 		CCDAFD9F29E9DA3100AA2D7C /* NetworkService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkService.swift; sourceTree = "<group>"; };
 		CCDAFDA629EECD2C00AA2D7C /* db.sqlite */ = {isa = PBXFileReference; lastKnownFileType = file; path = db.sqlite; sourceTree = "<group>"; };
 		CCDAFDA929EECF0600AA2D7C /* AppDatabase.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDatabase.swift; sourceTree = "<group>"; };
+		CCDAFDAB29EED12600AA2D7C /* FavouritesView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FavouritesView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -84,6 +86,7 @@
 			isa = PBXGroup;
 			children = (
 				CCDAFD9929E9D51600AA2D7C /* JokeView.swift */,
+				CCDAFDAB29EED12600AA2D7C /* FavouritesView.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -194,6 +197,7 @@
 				CCDAFD9A29E9D51600AA2D7C /* JokeView.swift in Sources */,
 				CCDAFDA029E9DA3100AA2D7C /* NetworkService.swift in Sources */,
 				CCDAFD9D29E9D87100AA2D7C /* Joke.swift in Sources */,
+				CCDAFDAC29EED12600AA2D7C /* FavouritesView.swift in Sources */,
 				CCDAFDAA29EECF0600AA2D7C /* AppDatabase.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
