@@ -79,6 +79,8 @@ struct JokeView: View {
                 }, label: {
                    Text("Save Joke")
                 })
+                .disabled(punchlineOpacity == 0.0 ? true: false)
+                .tint(.pink)
                 .buttonStyle(.borderedProminent)
                 
             }
