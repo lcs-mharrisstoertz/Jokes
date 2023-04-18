@@ -15,6 +15,7 @@
 		CCDAFDA029E9DA3100AA2D7C /* NetworkService.swift in Sources */ = {isa = PBXBuildFile; fileRef = CCDAFD9F29E9DA3100AA2D7C /* NetworkService.swift */; };
 		CCDAFDA529EECA6700AA2D7C /* Blackbird in Frameworks */ = {isa = PBXBuildFile; productRef = CCDAFDA429EECA6700AA2D7C /* Blackbird */; };
 		CCDAFDA729EECD2C00AA2D7C /* db.sqlite in Resources */ = {isa = PBXBuildFile; fileRef = CCDAFDA629EECD2C00AA2D7C /* db.sqlite */; };
+		CCDAFDAA29EECF0600AA2D7C /* AppDatabase.swift in Sources */ = {isa = PBXBuildFile; fileRef = CCDAFDA929EECF0600AA2D7C /* AppDatabase.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +27,7 @@
 		CCDAFD9C29E9D87100AA2D7C /* Joke.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Joke.swift; sourceTree = "<group>"; };
 		CCDAFD9F29E9DA3100AA2D7C /* NetworkService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkService.swift; sourceTree = "<group>"; };
 		CCDAFDA629EECD2C00AA2D7C /* db.sqlite */ = {isa = PBXFileReference; lastKnownFileType = file; path = db.sqlite; sourceTree = "<group>"; };
+		CCDAFDA929EECF0600AA2D7C /* AppDatabase.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDatabase.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -60,6 +62,7 @@
 			isa = PBXGroup;
 			children = (
 				CCDAFD8A29E9D46200AA2D7C /* JokesApp.swift */,
+				CCDAFDA829EECEDC00AA2D7C /* Helpers */,
 				CCDAFD9829E9D4F000AA2D7C /* Views */,
 				CCDAFD9E29E9DA1B00AA2D7C /* Services */,
 				CCDAFD9B29E9D85700AA2D7C /* Models */,
@@ -100,6 +103,14 @@
 				CCDAFD9F29E9DA3100AA2D7C /* NetworkService.swift */,
 			);
 			path = Services;
+			sourceTree = "<group>";
+		};
+		CCDAFDA829EECEDC00AA2D7C /* Helpers */ = {
+			isa = PBXGroup;
+			children = (
+				CCDAFDA929EECF0600AA2D7C /* AppDatabase.swift */,
+			);
+			path = Helpers;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -183,6 +194,7 @@
 				CCDAFD9A29E9D51600AA2D7C /* JokeView.swift in Sources */,
 				CCDAFDA029E9DA3100AA2D7C /* NetworkService.swift in Sources */,
 				CCDAFD9D29E9D87100AA2D7C /* Joke.swift in Sources */,
+				CCDAFDAA29EECF0600AA2D7C /* AppDatabase.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
