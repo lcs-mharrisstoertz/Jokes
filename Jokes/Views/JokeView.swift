@@ -13,6 +13,7 @@ struct JokeView: View {
     @Environment(\.blackbirdDatabase)var db: Blackbird.Database?
     @State var punchlineOpacity = 0.0
     @State var currentJoke: Joke?
+    @State var savedToDatabase = false
     
     //MARK: computed properties
     var body: some View {
@@ -57,6 +58,7 @@ struct JokeView: View {
                             currentJoke = nil
                         }
                         currentJoke = await NetworkService.fetch()
+                        savedToDatabase = false
                     }
                 }, label: {
                     Text("New Joke")
@@ -73,6 +75,8 @@ struct JokeView: View {
                                                currentJoke.type,
                                                currentJoke.setup,
                                                currentJoke.punchline)
+                                
+                                savedToDatabase = true
                             }
                         }
                     }
@@ -80,6 +84,7 @@ struct JokeView: View {
                    Text("Save Joke")
                 })
                 .disabled(punchlineOpacity == 0.0 ? true: false)
+                .disabled(savedToDatabase == true ? true: false)
                 .tint(.pink)
                 .buttonStyle(.borderedProminent)
                 
